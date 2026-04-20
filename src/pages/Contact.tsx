@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Seo } from "@/components/Seo";
 import { ContactForm } from "@/components/ContactForm";
+import { FAQSection } from "@/components/FAQSection";
 import { site } from "@/data/site";
 
 const Contact = () => {
@@ -87,6 +88,10 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <div className="border-t border-border bg-surface">
+        <FAQSection />
+      </div>
     </>
   );
 };

@@ -20,25 +20,34 @@ export const CTASection = ({
 }: CTAProps) => {
   return (
     <section className="container-prose">
-      <div className="relative overflow-hidden rounded-sm bg-gradient-hero p-10 md:p-16 shadow-elevated">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_15%,hsl(var(--accent)/0.25),transparent_50%)]" />
-        <div className="relative max-w-2xl">
-          <span className="eyebrow text-accent-foreground/90">Iniziamo</span>
-          <h2 className="mt-5 font-serif text-3xl md:text-4xl text-primary-foreground leading-tight">
-            {title}
-          </h2>
-          <p className="mt-5 text-primary-foreground/75 text-base leading-relaxed">{text}</p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+      <div className="relative overflow-hidden rounded-sm bg-gradient-hero p-10 md:p-20 shadow-elevated">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_15%,hsl(var(--accent)/0.3),transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_90%,hsl(var(--accent)/0.15),transparent_50%)]" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-primary-foreground/10" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-primary-foreground/10" />
+
+        <div className="relative grid md:grid-cols-12 gap-10 items-end">
+          <div className="md:col-span-8">
+            <div className="flex items-center gap-3 text-[11px] uppercase tracking-[0.22em] text-primary-foreground/60">
+              <span className="h-px w-8 bg-accent" />
+              <span>Iniziamo a collaborare</span>
+            </div>
+            <h2 className="mt-6 font-serif text-3xl md:text-[2.75rem] text-primary-foreground leading-[1.1] tracking-tight max-w-2xl">
+              {title}
+            </h2>
+            <p className="mt-6 text-primary-foreground/70 text-base md:text-lg leading-relaxed max-w-xl">{text}</p>
+          </div>
+          <div className="md:col-span-4 flex flex-col gap-3 md:items-end">
             <Link
               to={primaryHref}
-              className="group inline-flex items-center justify-center gap-2 rounded-sm bg-accent text-accent-foreground px-6 py-3.5 text-sm font-medium hover:bg-accent/90 transition-colors"
+              className="group inline-flex items-center justify-center gap-2.5 rounded-sm bg-accent text-accent-foreground px-7 py-4 text-sm font-medium tracking-wide hover:bg-accent/90 transition-all w-full md:w-auto"
             >
               {primaryLabel}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               to={secondaryHref}
-              className="inline-flex items-center justify-center rounded-sm border border-primary-foreground/25 text-primary-foreground px-6 py-3.5 text-sm font-medium hover:bg-primary-foreground/5 transition-colors"
+              className="inline-flex items-center justify-center rounded-sm border border-primary-foreground/25 text-primary-foreground px-7 py-4 text-sm font-medium tracking-wide hover:bg-primary-foreground/5 hover:border-primary-foreground/40 transition-all w-full md:w-auto"
             >
               {secondaryLabel}
             </Link>

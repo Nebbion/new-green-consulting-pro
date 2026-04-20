@@ -118,6 +118,29 @@ export const team = [
   },
 ];
 
+export const faqs = [
+  {
+    q: "A chi si rivolge New Green Consulting?",
+    a: "Aziende, datori di lavoro, direzioni aziendali e realtà B2B che cercano un supporto strutturato tra sicurezza, organizzazione, comunicazione e sviluppo commerciale.",
+  },
+  {
+    q: "Offrite solo consulenza sulla sicurezza?",
+    a: "No, l'approccio integra anche formazione, comunicazione tecnica, valorizzazione dei servizi e strategie di sviluppo business.",
+  },
+  {
+    q: "Il servizio è personalizzabile?",
+    a: "Sì, ogni intervento viene costruito in funzione del contesto aziendale, delle priorità e degli obiettivi del cliente.",
+  },
+  {
+    q: "Supportate anche la parte operativa?",
+    a: "Sì, New Green Consulting affianca le aziende anche nelle attività operative, organizzative e di relazione con il cliente.",
+  },
+  {
+    q: "È possibile richiedere un confronto iniziale?",
+    a: "Sì, è possibile richiedere una consulenza dedicata per valutare esigenze, priorità e aree di intervento.",
+  },
+];
+
 export const benefits = [
   { title: "Un unico interlocutore", text: "Sicurezza, organizzazione, comunicazione e sviluppo coordinati in un percorso coerente." },
   { title: "Approccio integrato", text: "Consulenza tecnica, procedure e formazione progettate per dialogare tra loro." },
