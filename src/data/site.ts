@@ -20,75 +20,191 @@ export const nav = [
 export const services = [
   {
     id: "sicurezza",
+    category: "Consulenza tecnica",
     title: "Sicurezza e supporto al datore di lavoro",
     short:
       "Consulenza tecnica e organizzativa per garantire conformità, prevenzione e continuità operativa.",
+    description:
+      "Affianchiamo la direzione e il datore di lavoro nella costruzione di un sistema di prevenzione coerente, sostenibile e integrato con i flussi quotidiani dell'impresa.",
     points: [
       "Affiancamento al datore di lavoro e alla direzione",
       "Pianificazione delle attività di prevenzione",
       "Integrazione tra procedure operative e formazione",
       "Supporto documentale e gestionale",
     ],
+    deliverables: [
+      "Mappatura iniziale del contesto e dei rischi organizzativi",
+      "Calendario annuale di prevenzione e adempimenti",
+      "Procedure operative scritte e revisionate",
+      "Reportistica periodica per la direzione",
+    ],
+    outcomes: [
+      "Riduzione della complessità gestionale",
+      "Maggiore coerenza tra procedure e pratica",
+      "Continuità operativa nel tempo",
+    ],
   },
   {
     id: "formazione",
+    category: "Formazione",
     title: "Formazione e progettazione di percorsi",
     short:
       "Percorsi formativi progettati su misura, con materiali chiari e linguaggio coerente al contesto aziendale.",
+    description:
+      "Progettiamo percorsi formativi che parlano la lingua dell'impresa: contenuti rigorosi, materiali curati e una didattica orientata alla pratica quotidiana.",
     points: [
       "Analisi dei fabbisogni formativi",
       "Progettazione di moduli verticali e trasversali",
       "Materiali informativi e didattici dedicati",
       "Cultura della sicurezza in ottica continuativa",
     ],
+    deliverables: [
+      "Piano formativo annuale strutturato",
+      "Moduli su misura per ruoli e contesti",
+      "Slide, dispense e materiali di supporto",
+      "Verifiche di apprendimento e feedback",
+    ],
+    outcomes: [
+      "Persone più consapevoli e autonome",
+      "Conoscenza distribuita nell'organizzazione",
+      "Cultura della sicurezza che si consolida",
+    ],
   },
   {
     id: "comunicazione",
+    category: "Comunicazione",
     title: "Comunicazione tecnica e valorizzazione servizi",
     short:
       "Strumenti di comunicazione istituzionale che traducono competenze tecniche in valore percepito.",
+    description:
+      "Trasformiamo competenze complesse in messaggi chiari, coerenti e istituzionali, capaci di rafforzare il posizionamento dell'impresa verso clienti e stakeholder.",
     points: [
       "Comunicazione tecnica chiara e istituzionale",
       "Documenti, brochure e contenuti corporate",
       "Identità coerente su canali interni ed esterni",
       "Valorizzazione dei servizi verso clienti e stakeholder",
     ],
+    deliverables: [
+      "Linee guida editoriali e tono di voce",
+      "Brochure, schede tecniche e documenti corporate",
+      "Contenuti istituzionali per il sito e i canali",
+      "Materiali di presentazione per la rete commerciale",
+    ],
+    outcomes: [
+      "Identità più riconoscibile",
+      "Valore dei servizi più chiaro al mercato",
+      "Coerenza tra interno ed esterno",
+    ],
   },
   {
     id: "innovazione",
+    category: "Innovazione",
     title: "Strumenti innovativi e soluzioni immersive",
     short:
       "Tecnologie e formati innovativi per rendere più efficaci formazione, prevenzione e comunicazione.",
+    description:
+      "Integriamo strumenti digitali e formati immersivi nei percorsi formativi e operativi, per esperienze più coinvolgenti, misurabili e durature.",
     points: [
       "Soluzioni immersive per la formazione",
       "Approccio phygital integrato",
       "Strumenti digitali a supporto delle procedure",
       "Esperienze formative misurabili",
     ],
+    deliverables: [
+      "Format formativi digitali e immersivi",
+      "Strumenti di supporto alle procedure",
+      "Integrazione phygital tra aula e campo",
+      "Indicatori di efficacia e ingaggio",
+    ],
+    outcomes: [
+      "Maggiore retention dei contenuti",
+      "Esperienze formative più coinvolgenti",
+      "Procedure più semplici da applicare",
+    ],
   },
   {
     id: "operativo",
+    category: "Operations",
     title: "Supporto operativo presso aziende e cantieri",
     short:
       "Presenza qualificata sul territorio per affiancare team interni in contesti operativi complessi.",
+    description:
+      "Una presenza concreta sul campo: affianchiamo i team interni nei contesti più complessi, garantendo continuità tra strategia e applicazione quotidiana.",
     points: [
       "Sopralluoghi e affiancamento on-site",
       "Procedure operative su misura",
       "Verifica continua della corretta applicazione",
       "Reportistica per la direzione",
     ],
+    deliverables: [
+      "Sopralluoghi tecnici programmati",
+      "Check-list operative dedicate",
+      "Affiancamento on-site ai responsabili",
+      "Report di verifica e raccomandazioni",
+    ],
+    outcomes: [
+      "Procedure realmente applicate",
+      "Decisioni basate su evidenze di campo",
+      "Allineamento tra direzione e operativi",
+    ],
   },
   {
     id: "marketing",
+    category: "Sviluppo commerciale",
     title: "Marketing, SEO e lead generation B2B",
     short:
       "Crescita commerciale strutturata: visibilità organica, contenuti autorevoli e generazione contatti qualificati.",
+    description:
+      "Costruiamo presenza digitale e pipeline commerciale con un approccio editoriale e dato-centrico, coerente con il posizionamento di un'impresa B2B.",
     points: [
       "SEO specialistica per il contesto B2B",
       "Content marketing istituzionale",
       "Lead generation e nurturing",
       "Reportistica, monitoraggio e sviluppo dati",
     ],
+    deliverables: [
+      "Strategia SEO e piano editoriale",
+      "Contenuti istituzionali long-form",
+      "Funnel di lead generation B2B",
+      "Dashboard di monitoraggio dei risultati",
+    ],
+    outcomes: [
+      "Visibilità organica qualificata",
+      "Contatti coerenti con il posizionamento",
+      "Decisioni commerciali guidate dai dati",
+    ],
+  },
+];
+
+export const sectors = [
+  "Industria e manifattura",
+  "Costruzioni e cantieri",
+  "Servizi B2B",
+  "Logistica e trasporti",
+  "Energia e utilities",
+  "Real estate e facility",
+];
+
+export const principles = [
+  {
+    n: "I",
+    title: "Metodo prima del rumore",
+    text: "Ogni intervento parte da un'analisi rigorosa del contesto, non da soluzioni preconfezionate.",
+  },
+  {
+    n: "II",
+    title: "Integrazione, non sommatoria",
+    text: "Sicurezza, formazione, comunicazione e sviluppo dialogano dentro un disegno coerente.",
+  },
+  {
+    n: "III",
+    title: "Misura ciò che conta",
+    text: "Indicatori chiari, reportistica essenziale, decisioni basate su evidenze.",
+  },
+  {
+    n: "IV",
+    title: "Continuità nel tempo",
+    text: "Affiancamento stabile alla direzione, non interventi episodici.",
   },
 ];
 

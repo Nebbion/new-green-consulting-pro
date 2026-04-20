@@ -109,11 +109,15 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] font-medium text-accent;
+    @apply inline-flex items-center gap-2.5 text-[10px] uppercase tracking-[0.24em] font-medium text-accent;
   }
   .eyebrow::before {
     content: "";
-    @apply inline-block h-px w-8 bg-accent/60;
+    @apply inline-block h-px w-10 bg-accent/60;
+  }
+
+  .rule-accent {
+    @apply h-px w-12 bg-accent;
   }
 
   .hairline {
