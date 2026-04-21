@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { nav, site } from "@/data/site";
 import { cn } from "@/lib/utils";
+import logoMark from "@/assets/logo-ngc-mark.png";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -29,9 +30,13 @@ export const Header = () => {
     >
       <div className="container-prose flex h-16 md:h-20 items-center justify-between">
         <Link to="/" className="group flex items-center gap-3" aria-label={site.name}>
-          <div className="h-9 w-9 rounded-sm bg-gradient-accent grid place-items-center shadow-card">
-            <span className="font-serif text-primary-foreground text-lg leading-none">N</span>
-          </div>
+          <img
+            src={logoMark}
+            alt="New Green Consulting"
+            className="h-10 w-10 md:h-11 md:w-11 object-contain"
+            width={44}
+            height={44}
+          />
           <div className="leading-tight">
             <div className="font-serif text-[15px] md:text-base text-primary font-semibold tracking-tight">
               New Green Consulting
