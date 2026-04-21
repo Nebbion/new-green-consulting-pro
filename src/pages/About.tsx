@@ -60,9 +60,9 @@ const About = () => {
           </div>
 
           <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-16 items-end animate-fade-up">
-            <h1 className="lg:col-span-8 font-serif text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[1.02] tracking-[-0.02em] font-medium">
+            <h1 className="lg:col-span-8 font-serif text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[1.02] tracking-[-0.02em] font-medium text-primary-foreground">
               Una struttura costruita intorno alle{" "}
-              <span className="italic font-light text-accent-foreground/95">reali esigenze delle imprese</span>.
+              <span className="italic font-light text-accent-soft">reali esigenze delle imprese</span>.
             </h1>
             <p className="lg:col-span-4 text-base md:text-lg text-primary-foreground/75 leading-relaxed">
               Lavoriamo accanto a datori di lavoro, direzioni e responsabili interni con
