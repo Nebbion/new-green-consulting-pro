@@ -24,8 +24,8 @@ export const Header = () => {
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-background/85 backdrop-blur-md border-b border-border"
-          : "bg-transparent"
+          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-[0_1px_0_0_hsl(var(--border))]"
+          : "bg-background/80 backdrop-blur-sm border-b border-border/60"
       )}
     >
       <div className="container-prose flex h-16 md:h-20 items-center justify-between">
@@ -41,7 +41,7 @@ export const Header = () => {
             <div className="font-serif text-[15px] md:text-base text-primary font-semibold tracking-tight">
               New Green Consulting
             </div>
-            <div className="hidden sm:block text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+            <div className="hidden sm:block text-[10px] uppercase tracking-[0.18em] text-foreground/60">
               {site.payoff}
             </div>
           </div>
@@ -55,10 +55,10 @@ export const Header = () => {
               end={n.href === "/"}
               className={({ isActive }) =>
                 cn(
-                  "text-sm font-medium transition-colors relative py-1",
+                  "text-sm font-semibold tracking-tight transition-colors relative py-1",
                   isActive
-                    ? "text-primary after:absolute after:left-0 after:right-0 after:-bottom-0.5 after:h-px after:bg-accent"
-                    : "text-muted-foreground hover:text-primary"
+                    ? "text-primary after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-0.5 after:bg-accent"
+                    : "text-foreground/80 hover:text-primary"
                 )
               }
             >
@@ -67,7 +67,7 @@ export const Header = () => {
           ))}
           <Link
             to="/contact"
-            className="ml-2 inline-flex items-center justify-center rounded-sm bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary-soft transition-colors"
+            className="ml-2 inline-flex items-center justify-center rounded-sm bg-primary text-primary-foreground px-5 py-2.5 text-sm font-semibold tracking-tight shadow-sm hover:bg-primary-soft hover:shadow-md transition-all"
           >
             Richiedi consulenza
           </Link>
