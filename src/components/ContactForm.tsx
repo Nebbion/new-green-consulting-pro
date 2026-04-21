@@ -18,7 +18,7 @@ const schema = z.object({
     .regex(/^[0-9 +().-]+$/, "Numero di telefono non valido"),
   message: z.string().trim().min(10, "Scrivi un messaggio di almeno 10 caratteri").max(1500),
   privacy: z.literal(true, {
-    errorMap: () => ({ message: "Per inviare la richiesta è necessario accettare l'informativa privacy" }),
+    message: "Per inviare la richiesta è necessario accettare l'informativa privacy",
   }),
 });
 
