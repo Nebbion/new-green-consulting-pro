@@ -22,6 +22,7 @@ export const services = [
     id: "sicurezza",
     category: "Consulenza tecnica",
     title: "Sicurezza e supporto al datore di lavoro",
+    image: "section-safety",
     short:
       "Consulenza tecnica e organizzativa per garantire conformità, prevenzione e continuità operativa.",
     description:
@@ -48,6 +49,7 @@ export const services = [
     id: "formazione",
     category: "Formazione",
     title: "Formazione e progettazione di percorsi",
+    image: "section-training",
     short:
       "Percorsi formativi progettati su misura, con materiali chiari e linguaggio coerente al contesto aziendale.",
     description:
@@ -74,6 +76,7 @@ export const services = [
     id: "comunicazione",
     category: "Comunicazione",
     title: "Comunicazione tecnica e valorizzazione servizi",
+    image: "section-consulting",
     short:
       "Strumenti di comunicazione istituzionale che traducono competenze tecniche in valore percepito.",
     description:
@@ -100,6 +103,7 @@ export const services = [
     id: "innovazione",
     category: "Innovazione",
     title: "Strumenti innovativi e soluzioni immersive",
+    image: "texture-architecture",
     short:
       "Tecnologie e formati innovativi per rendere più efficaci formazione, prevenzione e comunicazione.",
     description:
@@ -126,6 +130,7 @@ export const services = [
     id: "operativo",
     category: "Operations",
     title: "Supporto operativo presso aziende e cantieri",
+    image: "section-method",
     short:
       "Presenza qualificata sul territorio per affiancare team interni in contesti operativi complessi.",
     description:
@@ -152,6 +157,7 @@ export const services = [
     id: "marketing",
     category: "Sviluppo commerciale",
     title: "Marketing, SEO e lead generation B2B",
+    image: "section-marketing",
     short:
       "Crescita commerciale strutturata: visibilità organica, contenuti autorevoli e generazione contatti qualificati.",
     description:
