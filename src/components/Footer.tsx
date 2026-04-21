@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
 import { nav, site } from "@/data/site";
-import logoFull from "@/assets/logo-ngc.png";
+import logoFull from "@/assets/logo-ngc.jpg";
 
 export const Footer = () => {
   return (
