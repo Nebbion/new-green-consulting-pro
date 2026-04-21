@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -16,6 +17,9 @@ const schema = z.object({
     .max(30)
     .regex(/^[0-9 +().-]+$/, "Numero di telefono non valido"),
   message: z.string().trim().min(10, "Scrivi un messaggio di almeno 10 caratteri").max(1500),
+  privacy: z.literal(true, {
+    errorMap: () => ({ message: "Per inviare la richiesta è necessario accettare l'informativa privacy" }),
+  }),
 });
 
 type FormValues = z.infer<typeof schema>;
@@ -81,6 +85,24 @@ export const ContactForm = () => {
         {errors.message && <p className="mt-1.5 text-xs text-destructive">{errors.message.message}</p>}
       </div>
 
+      <div className="pt-2 border-t border-border/60">
+        <label htmlFor="privacy" className="flex items-start gap-3 cursor-pointer group">
+          <input
+            id="privacy"
+            type="checkbox"
+            {...register("privacy")}
+            className="mt-1 h-4 w-4 rounded-sm border-border text-accent focus:ring-accent accent-accent shrink-0"
+          />
+          <span className="text-xs text-muted-foreground leading-relaxed">
+            Ho letto e accetto l'
+            <Link to="/privacy-policy" className="text-accent hover:underline">informativa sul trattamento dei dati personali</Link>
+            {" "}ai sensi del Regolamento UE 2016/679 (GDPR) e acconsento di essere ricontattato per riscontro alla presente richiesta.
+            <span className="text-destructive"> *</span>
+          </span>
+        </label>
+        {errors.privacy && <p className="mt-1.5 text-xs text-destructive">{errors.privacy.message as string}</p>}
+      </div>
+
       <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-2">
         <button
           type="submit"
@@ -97,7 +119,7 @@ export const ContactForm = () => {
           </div>
         )}
         <p className="text-xs text-muted-foreground sm:ml-auto">
-          Inviando accetti di essere ricontattato per finalità informative.
+          I campi contrassegnati con * sono obbligatori.
         </p>
       </div>
     </form>
