@@ -41,7 +41,7 @@ export const Header = () => {
             <div className="font-serif text-[15px] md:text-base text-primary font-semibold tracking-tight">
               New Green Consulting
             </div>
-            <div className="hidden sm:block text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+            <div className="hidden sm:block text-[10px] uppercase tracking-[0.18em] text-foreground/60">
               {site.payoff}
             </div>
           </div>
@@ -67,7 +67,7 @@ export const Header = () => {
           ))}
           <Link
             to="/contact"
-            className="ml-2 inline-flex items-center justify-center rounded-sm bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary-soft transition-colors"
+            className="ml-2 inline-flex items-center justify-center rounded-sm bg-primary text-primary-foreground px-5 py-2.5 text-sm font-semibold tracking-tight shadow-sm hover:bg-primary-soft hover:shadow-md transition-all"
           >
             Richiedi consulenza
           </Link>
