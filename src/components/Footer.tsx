@@ -1,16 +1,21 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
 import { nav, site } from "@/data/site";
+import logoFull from "@/assets/logo-ngc.png";
 
 export const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground/80 mt-24">
       <div className="container-prose py-16 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
-          <div className="font-serif text-2xl text-primary-foreground tracking-tight">
-            {site.name}
+          <div className="bg-primary-foreground/95 inline-block p-3 rounded-sm">
+            <img
+              src={logoFull}
+              alt={`${site.legalName} — ${site.payoff}`}
+              className="h-20 md:h-24 w-auto object-contain"
+            />
           </div>
-          <p className="mt-3 text-sm text-primary-foreground/65 max-w-md leading-relaxed">
+          <p className="mt-5 text-sm text-primary-foreground/65 max-w-md leading-relaxed">
             {site.payoff}. Un unico partner per sicurezza, organizzazione, comunicazione e sviluppo commerciale.
           </p>
         </div>
@@ -51,9 +56,13 @@ export const Footer = () => {
         </div>
       </div>
       <div className="border-t border-primary-foreground/10">
-        <div className="container-prose py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-primary-foreground/50">
+        <div className="container-prose py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-primary-foreground/55">
           <div>© {new Date().getFullYear()} {site.legalName}. Tutti i diritti riservati.</div>
-          <div>P. IVA · Sede legale Italia</div>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
+            <Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/cookie-policy" className="hover:text-primary-foreground transition-colors">Cookie Policy</Link>
+            <span className="text-primary-foreground/40">P. IVA · Sede legale Italia</span>
+          </div>
         </div>
       </div>
     </footer>
