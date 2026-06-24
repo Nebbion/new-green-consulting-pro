@@ -174,6 +174,35 @@ export const services = [
       "Decisioni commerciali guidate dai dati",
     ],
   },
+  {
+    id: "medicina-lavoro",
+    category: "Medicina del lavoro",
+    title: "Medicina del Lavoro e Sorveglianza Sanitaria Aziendale",
+    short:
+      "Gestione completa degli obblighi sanitari previsti dalla normativa, per tutelare la salute dei lavoratori e garantire la conformità al D.Lgs. 81/2008.",
+    description:
+      "Supportiamo le aziende nella gestione degli adempimenti sanitari previsti dalla normativa, con un approccio integrato che tutela la salute dei lavoratori, riduce il rischio aziendale e affianca il datore di lavoro in ogni fase operativa.",
+    points: [
+      "Nomina del Medico Competente",
+      "Sorveglianza Sanitaria",
+      "Visite Mediche del Lavoro",
+      "Idoneità alla mansione",
+      "Scadenziario sanitario e programmazione",
+    ],
+    deliverables: [
+      "Nomina formale del Medico Competente e gestione documentale",
+      "Pianificazione delle visite mediche obbligatorie",
+      "Gestione di visite preventive, periodiche, su cambio mansione, rientro e richiesta",
+      "Rilascio e aggiornamento dei giudizi di idoneità",
+      "Monitoraggio scadenze e scadenziario sanitario",
+    ],
+    outcomes: [
+      "Tutela della salute dei lavoratori",
+      "Riduzione del rischio aziendale",
+      "Conformità normativa al D.Lgs. 81/2008",
+      "Supporto operativo al datore di lavoro",
+    ],
+  },
 ];
 
 export const sectors = [
