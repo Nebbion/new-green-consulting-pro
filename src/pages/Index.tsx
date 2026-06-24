@@ -65,7 +65,7 @@ const Index = () => {
         <div className="container-prose py-24 md:py-32">
           <SectionTitle
             eyebrow="Aree di intervento"
-            title="Sei macroaree di consulenza, un approccio integrato."
+            title="Sette macroaree di consulenza, un approccio integrato."
             description="Ogni servizio è progettato per dialogare con gli altri: sicurezza, formazione, comunicazione e sviluppo commerciale lavorano insieme dentro un percorso coerente."
           />
           <div className="mt-14">

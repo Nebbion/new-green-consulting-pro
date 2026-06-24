@@ -33,7 +33,7 @@ const Services = () => {
             <span className="h-px w-10 bg-accent" />
             <span>Servizi</span>
             <span className="text-primary-foreground/25">/</span>
-            <span>Sei aree, un sistema</span>
+            <span>Sette aree, un sistema</span>
           </div>
 
           <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-16 items-end">
@@ -56,7 +56,7 @@ const Services = () => {
           <div className="grid gap-8 md:grid-cols-12 items-center">
             <div className="md:col-span-3">
               <span className="eyebrow">Sommario</span>
-              <div className="mt-3 font-serif text-primary text-base">Sei aree di intervento</div>
+              <div className="mt-3 font-serif text-primary text-base">Sette aree di intervento</div>
             </div>
             <ul className="md:col-span-9 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2.5">
               {services.map((s, i) => (
