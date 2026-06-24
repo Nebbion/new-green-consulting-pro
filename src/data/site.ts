@@ -22,7 +22,6 @@ export const services = [
     id: "sicurezza",
     category: "Consulenza tecnica",
     title: "Sicurezza e supporto al datore di lavoro",
-    image: "section-safety",
     short:
       "Consulenza tecnica e organizzativa per garantire conformità, prevenzione e continuità operativa.",
     description:
@@ -49,7 +48,6 @@ export const services = [
     id: "formazione",
     category: "Formazione",
     title: "Formazione e progettazione di percorsi",
-    image: "section-training",
     short:
       "Percorsi formativi progettati su misura, con materiali chiari e linguaggio coerente al contesto aziendale.",
     description:
@@ -76,7 +74,6 @@ export const services = [
     id: "comunicazione",
     category: "Comunicazione",
     title: "Comunicazione tecnica e valorizzazione servizi",
-    image: "section-consulting",
     short:
       "Strumenti di comunicazione istituzionale che traducono competenze tecniche in valore percepito.",
     description:
@@ -103,7 +100,6 @@ export const services = [
     id: "innovazione",
     category: "Innovazione",
     title: "Strumenti innovativi e soluzioni immersive",
-    image: "texture-architecture",
     short:
       "Tecnologie e formati innovativi per rendere più efficaci formazione, prevenzione e comunicazione.",
     description:
@@ -130,7 +126,6 @@ export const services = [
     id: "operativo",
     category: "Operations",
     title: "Supporto operativo presso aziende e cantieri",
-    image: "section-method",
     short:
       "Presenza qualificata sul territorio per affiancare team interni in contesti operativi complessi.",
     description:
@@ -157,7 +152,6 @@ export const services = [
     id: "marketing",
     category: "Sviluppo commerciale",
     title: "Marketing, SEO e lead generation B2B",
-    image: "section-marketing",
     short:
       "Crescita commerciale strutturata: visibilità organica, contenuti autorevoli e generazione contatti qualificati.",
     description:
@@ -178,6 +172,35 @@ export const services = [
       "Visibilità organica qualificata",
       "Contatti coerenti con il posizionamento",
       "Decisioni commerciali guidate dai dati",
+    ],
+  },
+  {
+    id: "medicina-lavoro",
+    category: "Medicina del lavoro",
+    title: "Medicina del Lavoro e Sorveglianza Sanitaria Aziendale",
+    short:
+      "Gestione completa degli obblighi sanitari previsti dalla normativa, per tutelare la salute dei lavoratori e garantire la conformità al D.Lgs. 81/2008.",
+    description:
+      "Supportiamo le aziende nella gestione degli adempimenti sanitari previsti dalla normativa, con un approccio integrato che tutela la salute dei lavoratori, riduce il rischio aziendale e affianca il datore di lavoro in ogni fase operativa.",
+    points: [
+      "Nomina del Medico Competente",
+      "Sorveglianza Sanitaria",
+      "Visite Mediche del Lavoro",
+      "Idoneità alla mansione",
+      "Scadenziario sanitario e programmazione",
+    ],
+    deliverables: [
+      "Nomina formale del Medico Competente e gestione documentale",
+      "Pianificazione delle visite mediche obbligatorie",
+      "Gestione di visite preventive, periodiche, su cambio mansione, rientro e richiesta",
+      "Rilascio e aggiornamento dei giudizi di idoneità",
+      "Monitoraggio scadenze e scadenziario sanitario",
+    ],
+    outcomes: [
+      "Tutela della salute dei lavoratori",
+      "Riduzione del rischio aziendale",
+      "Conformità normativa al D.Lgs. 81/2008",
+      "Supporto operativo al datore di lavoro",
     ],
   },
 ];
