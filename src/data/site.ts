@@ -247,17 +247,17 @@ export const process = [
 
 export const team = [
   {
-    name: "Anna Maria Colocci",
+    name: "",
     role: "Founder & CEO",
     bio: "Guida la visione strategica dell'azienda e coordina i progetti più complessi, con un approccio orientato alla concretezza e al valore per il cliente.",
   },
   {
-    name: "Nicola Belloni",
+    name: "",
     role: "Agente commerciale",
     bio: "Gestisce le relazioni con le imprese clienti, traducendo esigenze operative in percorsi di consulenza coerenti e sostenibili.",
   },
   {
-    name: "Loredana Positano",
+    name: "",
     role: "Figura chiave operativa",
     bio: "Presidia l'esecuzione dei progetti garantendo continuità tra consulenza, formazione e supporto sul territorio.",
   },
