@@ -59,7 +59,7 @@ export const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container-prose py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-primary-foreground/50">
           <div>© {new Date().getFullYear()} {site.legalName}. Tutti i diritti riservati.</div>
-          <div>P. IVA · Sede legale Italia</div>
+          <div>P. IVA {site.vat} · Sede legale Italia</div>
         </div>
       </div>
     </footer>
