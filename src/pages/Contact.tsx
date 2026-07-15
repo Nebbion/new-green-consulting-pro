@@ -78,10 +78,11 @@ const Contact = () => {
                   <MapPin className="h-4 w-4 text-accent" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Sede & P. IVA</div>
+                  <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Sede legale</div>
                   <div className="mt-1 text-sm text-primary">{site.legalName}</div>
-                  <div className="text-sm text-muted-foreground">P. IVA {site.vat}</div>
-                  <div className="text-sm text-muted-foreground">Italia · operatività su tutto il territorio nazionale</div>
+                  <div className="text-sm text-muted-foreground">{site.address.street}</div>
+                  <div className="text-sm text-muted-foreground">{site.address.city} · {site.address.country}</div>
+                  <div className="mt-2 text-sm text-muted-foreground">P. IVA {site.vat}</div>
                 </div>
               </li>
             </ul>
