@@ -92,11 +92,21 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-feature-settings: "ss01", "cv11";
+    letter-spacing: -0.005em;
   }
 
   h1, h2, h3, h4 {
     @apply font-serif tracking-tight text-primary;
     font-feature-settings: "ss01";
+    letter-spacing: -0.022em;
+  }
+
+  h1 { letter-spacing: -0.03em; }
+
+  a { -webkit-tap-highlight-color: transparent; }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent/50 ring-offset-2 ring-offset-background rounded-sm;
   }
 
   ::selection {
