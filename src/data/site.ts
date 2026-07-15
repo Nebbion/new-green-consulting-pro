@@ -8,6 +8,11 @@ export const site = {
   email: "segreterianewgreen@gmail.com",
   phone: "+39 393 640 5635",
   phoneRaw: "+393936405635",
+  address: {
+    street: "Viale delle Industrie 13",
+    city: "45100 Rovigo (RO)",
+    country: "Italia",
+  },
   description:
     "New Green Consulting affianca le PMI italiane con servizi integrati di sicurezza sul lavoro, formazione, comunicazione tecnica e sviluppo commerciale B2B.",
 };
