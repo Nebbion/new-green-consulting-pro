@@ -59,15 +59,11 @@ export const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container-prose py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-primary-foreground/50">
           <div>© {new Date().getFullYear()} {site.legalName}. Tutti i diritti riservati.</div>
-<<<<<<< HEAD
-          <div>P. IVA · Sede legale Italia</div>
+          <div>{site.address.street} · {site.address.city} · P. IVA {site.vat}</div>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
             <Link to="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
             <Link to="/cookie-policy" className="hover:text-primary-foreground transition-colors">Cookie Policy</Link>
           </div>
-=======
-          <div>{site.address.street} · {site.address.city} · P. IVA {site.vat}</div>
->>>>>>> lovable
         </div>
       </div>
     </footer>
