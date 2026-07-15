@@ -60,19 +60,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="bg-surface border-y border-border">
-        <div className="container-prose py-24 md:py-32">
-          <SectionTitle
-            eyebrow="Team"
-            title="Le persone che guidano l'azienda."
-            description="Competenze complementari, una visione condivisa: ogni progetto è seguito con responsabilità diretta dalle figure di riferimento."
-          />
-          <div className="mt-14">
-            <TeamSection />
-          </div>
-        </div>
-      </section>
 
       <div className="h-16" />
       <CTASection
