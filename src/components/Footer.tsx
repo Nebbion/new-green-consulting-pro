@@ -42,6 +42,12 @@ export const Footer = () => {
               </a>
             </li>
             <li>
+              <a href={`mailto:${site.pec}`} className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors">
+                <Mail className="h-4 w-4 text-accent" />
+                PEC: {site.pec}
+              </a>
+            </li>
+            <li>
               <a href={`tel:${site.phoneRaw}`} className="inline-flex items-center gap-2 hover:text-primary-foreground transition-colors">
                 <Phone className="h-4 w-4 text-accent" />
                 {site.phone}
