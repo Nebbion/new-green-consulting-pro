@@ -1,6 +1,6 @@
 import { Seo } from "@/components/Seo";
 import { SectionTitle } from "@/components/SectionTitle";
-import { TeamSection } from "@/components/TeamSection";
+
 import { CTASection } from "@/components/CTASection";
 
 const About = () => {
