@@ -64,11 +64,24 @@ const Contact = () => {
               </li>
               <li className="flex items-start gap-4">
                 <div className="h-10 w-10 shrink-0 rounded-sm bg-accent-soft grid place-items-center">
+                  <Mail className="h-4 w-4 text-accent" />
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">PEC</div>
+                  <a href={`mailto:${site.pec}`} className="mt-1 block text-sm text-primary hover:text-accent break-all">
+                    {site.pec}
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <div className="h-10 w-10 shrink-0 rounded-sm bg-accent-soft grid place-items-center">
                   <MapPin className="h-4 w-4 text-accent" />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Sede</div>
-                  <div className="mt-1 text-sm text-primary">Italia · operatività su tutto il territorio nazionale</div>
+                  <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Sede & P. IVA</div>
+                  <div className="mt-1 text-sm text-primary">{site.legalName}</div>
+                  <div className="text-sm text-muted-foreground">P. IVA {site.vat}</div>
+                  <div className="text-sm text-muted-foreground">Italia · operatività su tutto il territorio nazionale</div>
                 </div>
               </li>
             </ul>
