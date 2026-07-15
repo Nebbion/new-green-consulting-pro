@@ -1,11 +1,18 @@
 export const site = {
   name: "New Green Consulting",
   legalName: "New Green Consulting S.r.l.s.",
+  vat: "18118381005",
+  pec: "new.green.consulting.srls@legalmail.it",
   payoff: "Soluzioni a misura del tuo Business",
   url: "https://newgreenconsulting.it",
-  email: "newgreenconsulting2025@gmail.com",
-  phone: "+39 351 422 7966",
-  phoneRaw: "+393514227966",
+  email: "segreterianewgreen@gmail.com",
+  phone: "+39 393 640 5635",
+  phoneRaw: "+393936405635",
+  address: {
+    street: "Viale delle Industrie 13",
+    city: "45100 Rovigo (RO)",
+    country: "Italia",
+  },
   description:
     "New Green Consulting affianca le PMI italiane con servizi integrati di sicurezza sul lavoro, formazione, comunicazione tecnica e sviluppo commerciale B2B.",
 };
