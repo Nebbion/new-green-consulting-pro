@@ -4,6 +4,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Send, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import emailjs from "@emailjs/browser";
+
 
 const schema = z.object({
   name: z.string().trim().min(2, "Inserisci nome e cognome").max(100),
@@ -29,13 +31,29 @@ export const ContactForm = () => {
     formState: { errors, isSubmitting },
   } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
-  const onSubmit = async (_values: FormValues) => {
-    // Frontend-only: simulate dispatch. Hook future API/edge function here.
-    await new Promise((r) => setTimeout(r, 600));
+  const onSubmit = async (values: FormValues) => {
+  try {
+    await emailjs.send(
+      "service_l5cik1f",
+      "template_4a0whpd",
+      {
+        name: values.name,
+        company: values.company,
+        email: values.email,
+        phone: values.phone,
+        message: values.message,
+      },
+      "kpvw2PInjIda_ucJu"
+    );
+
     setSent(true);
     reset();
     setTimeout(() => setSent(false), 6000);
-  };
+  } catch (err) {
+    console.error(err);
+    alert("Errore durante l'invio.");
+  }
+};
 
   const field =
     "w-full bg-card border border-border rounded-sm px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors";
